@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    text-align: center;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #333333; /* Dark grey text color */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-bottom: 20px; /* Increased margin */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    border: 1px solid #cccccc; /* Light grey border */
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+p {
+    margin-top: 15px;
+    color: #555555; /* Grey text color */
+}
+
+a {
+    color: #4CAF50; /* Green link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
