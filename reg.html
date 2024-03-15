@@ -9,15 +9,45 @@
 <body>
     <div class="container">
         <form class="form">
-            <h2>Registration</h2>
-            <input type="text" placeholder="Registration Number" required>
-            <input type="text" placeholder="Name" required>
-            <label for="photo-upload">Upload Photo:</label>
-            <input type="file" id="photo-upload" name="photo" accept="image/*" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
+            <h1>Registration</h1>
+            <div class="input-group">
+                <label for="reg-number">Registration Number:</label>
+                <input type="text" id="reg-number" placeholder="Enter your registration number" required>
+            </div>
+            <div class="name-group">
+                <div class="input-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-group">
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" placeholder="Enter your middle name">
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="photo-upload">Upload Photo:</label>
+                <input type="file" id="photo-upload" name="photo" accept="image/*" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
             <button type="submit">Register</button>
         </form>
     </div>
