@@ -1,55 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="reg.css">
-</head>
-<body>
-    <div class="container">
-        <form class="form">
-            <h1>Registration</h1>
-            <div class="input-group">
-                <label for="reg-number">Registration Number:</label>
-                <input type="text" id="reg-number" placeholder="Enter your registration number" required>
-            </div>
-            <div class="name-group">
-                <div class="input-group">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" placeholder="Enter your first name" required>
-                </div>
-                <div class="input-group">
-                    <label for="middle-name">Middle Name:</label>
-                    <input type="text" id="middle-name" placeholder="Enter your middle name">
-                </div>
-                <div class="input-group">
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" placeholder="Enter your last name" required>
-                </div>
-            </div>
-            <div class="input-group">
-                <label for="photo-upload">Upload Photo:</label>
-                <input type="file" id="photo-upload" name="photo" accept="image/*" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" placeholder="Enter your email address" required>
-            </div>
-            <div class="input-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" placeholder="Enter your phone number" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Enter your password" required>
-            </div>
-            <div class="input-group">
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
-            </div>
-            <button type="submit">Register</button>
-        </form>
-    </div>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.form {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333; /* Dark grey text color */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555; /* Grey text color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+button,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
