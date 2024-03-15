@@ -7,8 +7,9 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 50px auto; /* Adjusted top margin */
 }
+
 
 .form {
     background-color: #ffffff; /* White background */
