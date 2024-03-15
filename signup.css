@@ -7,9 +7,10 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 25px auto; /* Adjusted top margin */
+    margin: 20px auto; /* Default margin */
+    padding: 0 20px; /* Add padding to container */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
-
 
 .form {
     background-color: #ffffff; /* White background */
@@ -65,4 +66,18 @@ button {
 
 button:hover {
     background-color: #45a049; /* Darker green on hover */
+}
+
+/* Media Query for tablet */
+@media only screen and (min-width: 768px) {
+    .container {
+        margin: 20px auto; /* Adjusted margin for tablet view */
+    }
+}
+
+/* Media Query for desktop */
+@media only screen and (min-width: 992px) {
+    .container {
+        margin: 20px auto; /* Adjusted margin for desktop view */
+    }
 }
