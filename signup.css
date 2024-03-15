@@ -7,7 +7,7 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 20px auto; /* Default margin */
+    margin: 25px auto; /* Default margin */
     padding: 0 20px; /* Add padding to container */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
@@ -31,6 +31,7 @@ h1 {
 
 .name-group {
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -68,16 +69,28 @@ button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
 
-/* Media Query for tablet */
+/* Media Query for tablet and larger screens */
 @media only screen and (min-width: 768px) {
-    .container {
-        margin: 20px auto; /* Adjusted margin for tablet view */
+    /* Adjust the layout for tablet and larger screens */
+    .name-group {
+        flex-direction: row; /* Display the input fields side by side */
+    }
+    
+    .name-group input[type="text"] {
+        width: calc(33.33% - 10px); /* Adjust the width of input fields */
     }
 }
-
-/* Media Query for desktop */
-@media only screen and (min-width: 992px) {
-    .container {
-        margin: 20px auto; /* Adjusted margin for desktop view */
+/* Media Query for tablet and larger screens */
+@media only screen and (min-width: 768px) {
+    /* Adjust the layout for tablet and larger screens */
+    .name-group {
+        flex-direction: row; /* Display the input fields side by side */
+        align-items: center; /* Center align the input fields */
+        gap: 20px; /* Add some gap between input fields */
+    }
+    
+    .name-group input[type="text"] {
+        width: 100%; /* Reset width to fill the available space */
+        max-width: 200px; /* Set a maximum width for consistency */
     }
 }
