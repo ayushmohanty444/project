@@ -1,44 +1,44 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f6f6f6; /* Light grey background */
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6; /* Light grey background */
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 25px auto; /* Default margin */
-    padding: 0 20px; /* Add padding to container */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  max-width: 600px;
+  margin: 25px auto; /* Default margin */
+  padding: 0 20px; /* Add padding to container */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .form {
-    background-color: #ffffff; /* White background */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333333; /* Dark grey text color */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333; /* Dark grey text color */
 }
 
 .input-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .name-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555555; /* Grey text color */
+  display: block;
+  margin-bottom: 5px;
+  color: #555555; /* Grey text color */
 }
 
 input[type="text"],
@@ -47,50 +47,50 @@ input[type="tel"],
 input[type="password"],
 button,
 input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cccccc; /* Light grey border */
-    border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box;
 }
 
 button {
-    background-color: #4CAF50; /* Green button */
-    color: #ffffff; /* White text color */
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 12px;
-    width: 100%;
-    transition: background-color 0.3s ease; /* Smooth transition */
+  background-color: #4caf50; /* Green button */
+  color: #ffffff; /* White text color */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; /* Darker green on hover */
 }
 
 /* Media Query for tablet and larger screens */
 @media only screen and (min-width: 768px) {
-    /* Adjust the layout for tablet and larger screens */
-    .name-group {
-        flex-direction: row; /* Display the input fields side by side */
-    }
-    
-    .name-group input[type="text"] {
-        width: calc(33.33% - 10px); /* Adjust the width of input fields */
-    }
+  /* Adjust the layout for tablet and larger screens */
+  .name-group {
+    flex-direction: row; /* Display the input fields side by side */
+  }
+
+  .name-group input[type="text"] {
+    width: calc(33.33% - 10px); /* Adjust the width of input fields */
+  }
 }
 /* Media Query for tablet and larger screens */
 @media only screen and (min-width: 768px) {
-    /* Adjust the layout for tablet and larger screens */
-    .name-group {
-        flex-direction: row; /* Display the input fields side by side */
-        align-items: center; /* Center align the input fields */
-        gap: 20px; /* Add some gap between input fields */
-    }
-    
-    .name-group input[type="text"] {
-        width: 100%; /* Reset width to fill the available space */
-        max-width: 200px; /* Set a maximum width for consistency */
-    }
+  /* Adjust the layout for tablet and larger screens */
+  .name-group {
+    flex-direction: row; /* Display the input fields side by side */
+    align-items: center; /* Center align the input fields */
+    gap: 20px; /* Add some gap between input fields */
+  }
+
+  .name-group input[type="text"] {
+    width: 100%; /* Reset width to fill the available space */
+    max-width: 200px; /* Set a maximum width for consistency */
+  }
 }
